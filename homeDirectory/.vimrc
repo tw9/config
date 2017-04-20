@@ -39,7 +39,7 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='murmur'
 
 " markdown
-Plugin 'plasticboy/vim-markdown'
+"Plugin 'plasticboy/vim-markdown'
 
 " syntax
 Plugin 'scrooloose/syntastic'

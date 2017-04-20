@@ -1,17 +1,15 @@
 
 export srcapp=/usr/local/srcapp
 
-#export GRADLE_HOME=/Users/tyler/Documents/java/gradle2.13
-#export PATH=$PATH:$GRADLE_HOME/bin
 
-export MAVEN_HOME=$srcapp/apache-maven-3.5.0/bin
+export MAVEN_HOME=$srcapp/apache-maven-3.5.0
+export GRADLE_HOME=$srcapp/gradle-3.5
 
 # go env
 export GOPATH=/Users/tyler/code/goWorkspaces
-#export PATH=$PATH:$GOPATH/bin
 
 
-envArray=( $MAVEN_HOME  )
+envArray=( $MAVEN_HOME/bin  $GRADLE_HOME/bin  )
 for i in "${envArray[@]}"
 do
 	export PATH=$PATH:$i
