@@ -3,7 +3,7 @@ export srcapp=/usr/local/srcapp
 
 export MAVEN_HOME=$srcapp/apache-maven-3.5.0
 export GRADLE_HOME=$srcapp/gradle-3.5
-export GOPATH=/Users/tyler/repository/goWorkspaces
+export GOPATH=~/repository/goWorkspaces
 
 
 envArray=( 
