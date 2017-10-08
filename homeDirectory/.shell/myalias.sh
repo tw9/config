@@ -23,7 +23,6 @@ pwd
 
 function gcmsg(){
 msg=$@
-echo your input is:"$msg"
 git commit -m "$msg"
 }
 
