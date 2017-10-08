@@ -7,7 +7,9 @@ alias z="cd .."
 alias u="cd -"
 alias vi="vim"
 alias router="ssh root@192.168.9.1"
+alias thinkpad="ssh 192.168.9.187 "
 alias twserver="ssh twdo"
+unalias gcmsg
 
 function up(){
 i=$1
@@ -18,6 +20,13 @@ i=$(( $i - 1 ))
 done
 pwd
 }
+
+function gcmsg(){
+msg=$@
+echo your input is:"$msg"
+git commit -m "$msg"
+}
+
 
 
 # docker
