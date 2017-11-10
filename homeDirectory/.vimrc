@@ -53,3 +53,7 @@ filetype plugin indent on
 
 
 
+nmap <c-h> <c-w>h
+nmap <c-l> <c-w>l
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k

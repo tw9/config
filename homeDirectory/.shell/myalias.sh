@@ -26,6 +26,8 @@ msg=$@
 git commit -m "$msg"
 }
 
+#go
+alias gor="go run "
 
 
 # docker
