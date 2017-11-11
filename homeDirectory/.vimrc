@@ -5,16 +5,19 @@ set ruler
 syntax on
 set list
 "set listchars=tab:\|.,trail:❄,eol:✓
-set listchars=tab:\|\.,trail:❄
+set listchars=tab:\|\-,trail:❄
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set autoindent
 set background=dark
-"set guifont=Monaco:h11
+colorscheme desert
+set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
 
 
 " vundle
+" Launch vim and run :PluginInstall 
+" 
 set nocompatible
 filetype off
 
@@ -29,6 +32,7 @@ nnoremap <silent> <F7> :NERDTreeToggle<CR>
 "let g:NERDTreeDirArrowCollapsible = '-'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeShowBookmarks=1
 
 " airline
 Plugin 'vim-airline/vim-airline'
@@ -44,7 +48,6 @@ let g:airline_theme='sol'
 
 " syntax
 Plugin 'scrooloose/syntastic'
-
 
 
 
